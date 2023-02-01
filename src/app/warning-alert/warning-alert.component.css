@@ -1,3 +1,5 @@
 p {
-  color: indianred;
+  background-color: indianred;
+  padding: 20px;
+  border: 5px solid darkred;
 }
