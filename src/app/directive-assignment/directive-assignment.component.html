@@ -13,9 +13,9 @@
 
   <h4>Logs:</h4>
   <p
-    *ngFor="let log of logs"
-    [ngStyle]="{backgroundColor: logs.indexOf(log, 1) >= 5  ? 'blue' : 'transparent'}"
-    [ngClass]="{'white-text': logs.indexOf(log, 1) >= 5 }"
+    *ngFor="let log of logs; let i = index"
+    [ngStyle]="{backgroundColor: i >= 5  ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': i >= 5 }"
   >
     {{ log }}
   </p>
